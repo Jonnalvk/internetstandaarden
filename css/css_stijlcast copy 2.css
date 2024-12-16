@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*  tekst  */
+
+a, p, h5{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3, h4{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+}
+
+h1, h2 {
+    font-family: 'rubik dirt';
+}
+
+ /* header */
+
+header {
+display: flex;
+flex-direction: column;
+}
+
+header h1{
+    text-align: center;
+    font-size: 4em;
+    background-color: #BB3426;
+    padding: 0.2em;
+    color: #FAF0DB;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #FE740B;
+    padding: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    list-style: none;
+    width: 70%;
+}
+
+nav a {
+    color: #FAF0DB;
+    font-size: large;
+    padding: 0.5em 1em;
+    margin: 2em;
+    border: 2px solid #FAF0DB;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+nav a.active{
+    background-color: #BB3426;
+}
+
+nav a:hover{
+    border: 2px solid #BB3426;
+}
+
+/* body */
+
+body {
+    background-color: #FAF0DB;
+}
+
+/* index */
+/* intro */
+
+section div h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+section:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+section:nth-child(1) div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 5em;
+}
+
+section:nth-child(1) div:nth-child(2) p{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+section:nth-child(1) a{
+    align-self: center;
+    background-color: #BB3426;
+    border-radius: 10px;
+    padding: 0.75em 2em;
+    color: #FAF0DB;
+    text-decoration: none;
+}
+
+section:nth-child(1) a:hover {
+    background-color: #FE740B;
+}
+
+section:nth-child(1) img{
+    width: 17em;
+}
+
+/* recente afleveringen */
+
+section:nth-child(2) a{
+    text-align: center;
+    background-color: #FE740B;
+    border-radius: 10px;
+    padding: 0.75em 2em;
+    color: #FAF0DB;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+section:nth-child(2) a:hover {
+    background-color: #BB3426;
+}
+
+section:nth-child(2) div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 3em;
+}
+
+section>h2{
+    background-color: #51A3A3;
+    padding: 1em 0em;
+    margin-top: 0%;
+    text-align: center;
+}
+
+section:nth-child(2) article {
+    display: flex;
+    flex-direction: column;
+    background-color: #4A5209;
+    color: #FAF0DB;
+    padding: 1em;
+    margin: 1em;
+    width: 30%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+section:nth-child(2) article a{
+    margin: 1em 5em 0em;
+}
+
+section:nth-child(2) article:hover {
+    transform: scale(1.05);
+}
+
+section:nth-child(2) article h3 {
+    margin-bottom: 1em;
+}
+
+div article img {
+    width: 60%;
+    border-radius: 2em;
+    margin-bottom: 2em;
+}
+
+
+/*  over ons   */
+/* intro */
+
+main>article{
+    text-align: center;
+    padding: 4em 25em;
+}
+main>article img{
+    width: 45%;
+}
+article>h2 {
+    font-size: 2.5em;
+}
+
+/* makers */
+
+.secoverons{
+    background-color: #4A5209;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
+
+.secoverons h3 {
+    color: #FAF0DB;
+    font-size: 1.5em;
+    padding: 2em 0em 0.5em;
+    border-bottom: solid 2px #FAF0DB;
+    margin: 0em 3.8em;
+
+}
+.secoverons>div{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em 2em 5em;
+
+}
+
+.secoverons div div {
+    position: relative;
+    width: 27em;
+    height:  32.05em;
+}
+
+.secoverons img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.secoverons img:nth-child(2) {
+    opacity: 0;
+}
+
+.secoverons div div:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+.secoverons div div:hover img:nth-child(1) {
+    opacity: 0;
+}
+
+
+/*  afleveringen   */
+ 
+article article{
+    background-color: #51A3A3;
+    border-radius: 2em;
+    margin: 1.5em 8em;
+    padding-bottom: 1.5em;
+}
+
+article article h3{
+    padding: 0.5em 0em;
+}
+
+.secafleveringen h3 {
+    background-color: #BB3426;
+    text-align: center;
+    color: #FAF0DB;
+    padding: 1em 0em;
+}
+
+h4 {
+    padding-bottom: 1em;
+}
+
+/* footer */
+
+footer {
+    background-color: #51A3A3;
+    color: black;
+    text-align: center;
+    padding: 1em;
+}
+
+footer p {
+    padding-bottom: 1em;
+}
+
+footer a, h5{
+    color: black;
+    font-size: 0.8em;
+}
